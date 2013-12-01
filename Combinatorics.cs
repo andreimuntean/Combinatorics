@@ -5,7 +5,8 @@ namespace AndreiMuntean
 {
     public static class Combinatorics
     {
-        static double g = 7; // Gamma function precision.
+        // Gamma function precision.
+        static double g = 7;
 
         static double[] p = new double[] {
             0.99999999999980993, 676.5203681218851, -1259.1392167224028,
@@ -13,7 +14,7 @@ namespace AndreiMuntean
             -0.13857109526572012, 9.9843695780195716e-6, 1.5056327351493116e-7
         };
 
-		// Arrangements.
+        // Arrangements.
         public static double A(double n, double k)
         {
             return Factorial(n) / Factorial(n - k);
